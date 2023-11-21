@@ -1,0 +1,38 @@
+
+   
+    <ul>
+        <li *ngFor="let cartItem of cart.items">
+            <div>
+                 <img [src]="cartItem.food.imageUrl"  class="image">
+            </div>
+          <div class="name">
+            {{cartItem.food.name}}
+          </div>
+
+          <div class="quantity">
+            {{cartItem.quantity}}
+          </div>
+           
+            <div class="price">
+                {{cartItem.price | currency:'INR'}}
+            </div>
+           
+             <div class="button" >Quantity
+              <button (click)="decrement(cartItem)" >-</button>
+              <input type="number" name="Quantity" class="input" [(ngModel)]="cartItem.quantity">
+            <button (click)="increment(cartItem)">+</button>
+            </div> 
+
+            <div>
+              <button class="remove" (click)="removeItem(cartItem)">Remove Item</button>
+            </div>
+
+        </li>
+    </ul>
+
+    <div>
+      <button class="Order" (click)="onclick()">Order Now</button>
+      <button class="back" (click)="back()">Back</button>
+    </div>
+    
+    

@@ -1,0 +1,58 @@
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid brown;
+  border-radius: 1rem;
+  list-style-type: none;
+  margin: .5rem;
+  padding: 0;
+  flex: 3 0;
+}
+ul li{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.image{
+   width: 40vh;
+   height: 40vh;
+}
+.name{
+  font-size: 20px;
+  color: brown;
+}
+.quantity{
+  font-size: 20px;
+  color: brown;
+}
+.price{
+  font-size: 20px;
+  color: brown;
+}
+.Order{
+  font-size: 20px;
+  color: brown;
+  margin-left: 80vh;
+  background-color: aquamarine;
+}
+.back{
+  font-size: 20px;
+  color: brown;
+  margin-left: 10vh;
+  background-color: aquamarine;
+}
+
+.input{
+  width: 40px;
+}
+.button{
+  color: brown;
+}
+.remove{
+  color: brown;
+  background-color:aquamarine;
+}

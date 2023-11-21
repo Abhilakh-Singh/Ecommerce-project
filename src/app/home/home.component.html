@@ -1,0 +1,26 @@
+<ul>
+    <li *ngFor="let food of foods">
+    
+      <img src="{{food.imageUrl}}" alt="Food Image"  class="food">
+      <div>
+
+        <div class="button" >Quantity
+          <button (click)="decrement(food)">-</button>
+          <input type="number" name="Quantity" class="input" [(ngModel)]="food.quantity">
+        <button (click)="increment(food)">+</button>
+        </div>
+
+        <div class="name">
+          {{food.name}}
+        </div>
+        <div class="price">
+          {{food.price | currency:'INR'}}
+        </div>
+  
+        <button class="Cart" (click)="addToCart(food)">Add to Cart</button>
+          
+      </div>
+    
+    </li>
+  </ul>
+  
